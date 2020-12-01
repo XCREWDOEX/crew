@@ -1,0 +1,175 @@
+@charset "UTF-8";
+/* CSS XCREWDOEX */
+
+/*background color*/
+ *{
+	margin: 0;
+	padding: 0;
+}
+h1{
+	margin: 65px 0px;
+	padding: 65px 0px ;
+	font-family: eth;
+	font-weight: 100;
+	
+}
+
+
+body 
+{ 
+	background-color: black; 
+	color: white; 	
+	font-family:ETH;
+	padding: 0px 30px 20px;
+}
+ 
+
+/*header styles*/
+@media ( max-width:991px){
+	
+}
+header 
+{
+	position: absolute;
+	top:0;
+	left:0;
+	padding: 0 100px;
+	background: #222121;
+	width:100%;
+	box-sizing: border-box;
+}
+header .logo
+{
+	color: #fff;
+	height: 50px;
+	line-height: 50px;
+	font-size: 24px;
+	float: left; 
+}
+header nav
+{
+	float: right;
+}
+header nav ul
+{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	
+}
+
+header nav ul li
+{
+	list-style: none;
+}
+header nav ul li a 
+{
+    height:50px;
+	line-height: 50px;
+	padding: 0 20px;
+	color:#fff;
+	text-decoration: none;
+	display: block;
+}
+header nav ul li a:hover,
+header nav ul li.active
+{
+	color: #fff;
+	background:mediumpurple;
+}
+.menu-toggle
+{
+	color: white;
+	float: right;
+	line-height: 50px;
+	font-size:24px;
+	cursor: pointer;
+	display: none;
+}
+@media ( max-width:991px)
+{
+	header
+	{
+		padding: 0 20px;
+	}
+    .menu-toggle
+	{
+		display: block;
+	}
+	header nav
+	{
+		position: absolute;
+		width: 100%;
+		height: calc(100vh - 50px);
+		background: black;
+		top:50px;
+		left: -100%;
+		transition: 0.5s;
+		padding: 0;
+		
+		
+	}
+	header nav.active
+	{
+		left:0;
+	}
+	header nav ul
+	{
+		display: block;
+		text-align: center;
+		
+	}
+	header nav ul li a
+	{
+		border-bottom: 1px solid rgba(0,0,0,.2);
+    }			
+}
+
+
+
+@media screen and (min-width: 601px) {
+  div.example {
+    font-size: 80px;
+  }
+}
+ 
+
+ /*gallery styles*/
+ .rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width:100%;
+  padding: 10px;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width:100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display:block;
+  float: left;
+  }
+
+.rslides img {
+  display:grid;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+  
+
+/*footer styles*/
+.wrapper {
+    min-height: 100%;
+    display: grid;
+}
